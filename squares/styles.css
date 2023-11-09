@@ -1,0 +1,51 @@
+.square {
+    background-color: teal;
+    height: 40px;
+    width: 40px;
+}
+
+.rectangle {
+    border: 1px solid;
+    width: 100%;
+    height: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.css-keyframes {
+    animation: slide;   
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.css-transition {
+    
+    transition: margin-left 4s ease, transform 4s ease;
+}
+
+.css-transition.stateOne {
+    margin-left: 0%;
+    transform: translateX(0);
+}
+
+.css-transition.stateTwo {
+    margin-left: 100%;
+    transform: translateX(-100%);
+}
+
+
+
+@keyframes slide {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+        transform: translateX(-100%)
+    }
+}
