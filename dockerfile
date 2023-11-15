@@ -4,4 +4,4 @@ WORKDIR /usr/src/app
 
 COPY . . 
 
-CMD ["node", "./sort/sort.js"]
+CMD node ./sort/sort.js; node ./sort/sort1.js

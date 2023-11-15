@@ -1,8 +1,8 @@
+
 let parent = document.getElementById("js-setInterval").parentElement
 let child = document.getElementById("js-setInterval")
 let transition = document.querySelector(".css-transition")
 let requestAF = document.querySelector("#js-requestAnimationFrame")
-
 
 function setIntervalAnimation() {
     let direction = true 
@@ -61,8 +61,6 @@ function requestAnimationFrameAnimation() {
     draw()
 }
 
-
-
 function loopTransition(e) {
     if (e.propertyName == "margin-left") {
         if (transition.className == "square css-transition stateTwo") {
@@ -76,8 +74,10 @@ function loopTransition(e) {
     }
 }
 
-setIntervalAnimation()
-requestAnimationFrameAnimation()
 transition.addEventListener("webkitTransitionEnd", loopTransition, false)
 transition.className = "square css-transition stateTwo"
+
+requestAnimationFrameAnimation()
+setIntervalAnimation()
+
 
