@@ -23,16 +23,16 @@
     animation-direction: alternate;
 }
 
-.css-transition {
+#css-transition {
     transition: margin-left 4s ease, transform 4s ease;
 }
 
-.css-transition.stateOne {
+#css-transition.stateOne {
     margin-left: 0%;
     transform: translateX(0);
 }
 
-.css-transition.stateTwo {
+#css-transition.stateTwo {
     margin-left: 100%;
     transform: translateX(-100%);
 }
